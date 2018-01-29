@@ -4,9 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
+
   <title>Mushrooms</title>
 </head>
-<body>
-  <script src="main.js"></script>
+<body ng-app="mushroomStuff">
+
+  <h1>Mushroom Exercise</h1>
+  <input type="text" id="input">
+  <input type="radio" id="poison"> 
+  <label for="poison">Poisonous</label>
+  <input type="radio" id="nonpoison">
+  <label for="nonpoison">Non-poisonous</label>
+  <div id="output"></div>
+
+  
+  <!-- <script src="factories/shroomFactory.js"></script> -->
+  <script src="app/app.js"></script>
 </body>
 </html>
