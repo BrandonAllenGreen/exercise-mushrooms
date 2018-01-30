@@ -1,0 +1,17 @@
+
+<div>
+  <h2>Mushroom Stuff</h2>
+  <input type="text" ng-model="shroomSearch">
+  <div>
+    <input type="radio" id="poisonous" ng-model="edible" ng-value="false">
+    <label for="poisonous">Poisonous</label>
+    <input type="radio" id="nonPoisonous" ng-model="edible" ng-value="true">
+    <label for="nonPoisonous">Not Poisonous</label>
+  </div>
+  <ul ng-repeat="shroom in shroomList | filter: {name: shroomSearch, edible: edible}">
+    <li>
+      <h5>{{shroom.name}}</h5>
+      <p>{{shroom.description}}</p>
+    </li>
+  </ul>
+</div>
